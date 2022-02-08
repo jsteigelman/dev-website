@@ -1,12 +1,14 @@
 :root {
   --background: #4324fb;
-  --link-hover-color: magenta;
   --nav-color: white;
-  --font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  --font-family: nhg-s65, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --white: white;
   font-size: 16px;
   --normal-weight: var(--normal-weight);
   --bold-weight: 600;
+  /* --accent-color: #70FB6D; */
+  --accent-color: magenta;
 }
 
 body {
@@ -33,11 +35,14 @@ body {
   font-family: var(--font-family);
   font-weight: var(--bold-weight);
   background-color: transparent;
+  text-align: left;
 }
 
 .header-text h1 {
   font-size: 28px;
   margin: 0;
+  flex-grow: 2;
+
 }
 
 ul {
@@ -48,12 +53,15 @@ ul {
 
   font-size: 24px;
   font-weight: var(--normal-weight);
+
+  display: flex;
+  flex-direction: row;
 }
 
 li {
-  float: left;
+  float: right;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 16px;
   margin: 0;
   font-weight: 600;
 }
@@ -63,21 +71,19 @@ li a {
   color: var(--nav-color);
   text-align: center;
   text-decoration: none;
+  text-align: right;
+
 }
 
 li a:hover {
-  color: var(--link-hover-color);
-}
-
-li:hover {
-    color: var(--link-hover-color);
-    cursor: pointer;
+  color: var(--accent-color);
 }
 
 /* about section */
 
 .aboutDrawer {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -87,7 +93,7 @@ li:hover {
 
 .aboutDrawer__text {
   display: inline-block;
-  background-color: magenta;
+  background-color: var(--accent-color);
   bottom: 0;
   position: fixed;
   margin: 0;
@@ -95,7 +101,7 @@ li:hover {
 }
 
 .aboutDrawer__text p {
-  font-size: 3.25rem;
+  font-size: 2.5rem;
   line-height: 3.75 rem;
   color: var(--white);
   font-family: var(--font-family);
@@ -103,6 +109,8 @@ li:hover {
   margin: 0;
   font-weight: var(--bold-weight);
   /* text-transform: uppercase; */
+  width: calc(100vw - 80px);
+  margin: 0 auto;
 }
 
 .aboutDrawer__githubLink {
@@ -113,4 +121,38 @@ li:hover {
 .aboutDrawer__emailLink {
   color: white;
   text-decoration: none;
+}
+
+
+
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .aboutDrawer {
+    overflow: scroll;
+  }
+
+  .aboutDrawer__text p {
+    overflow-wrap: break-word;
+    font-size: 4rem;
+  }
+
+  ul {
+      flex-direction: column;
+  }
+
+  li a {
+      padding-bottom: 16px;
+  }
 }

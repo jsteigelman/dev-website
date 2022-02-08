@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <title>Joey Steigelman</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
     <script src="js/about.js"></script>
   </head>
   <body>
     <div class="header-text">
       <h1>Joey Steigelman</h1>
-      <ul>
-        <li onclick="openAboutDrawer()">About</li>
+      <ul class="topnav">
+        <li onclick="openAboutDrawer()">
+          <a>About</a>
+        </li>
         <li>
           <a href="mailto:joey.steigelman@gmail.com?subject=Hello">Contact</a>
         </li>
@@ -21,24 +23,25 @@
       </ul>
     </div>
     <div class="aboutDrawer" onclick="closeAboutDrawer()">
-        <div class="aboutDrawer__text">
-            <p>
-                Joey Steigelman is a developer based in New York City. In her spare time
-                she can be found making
-                <a
-                  href="https://github.com/jsteigelman"
-                  target="_blank"
-                  class="aboutDrawer__githubLink"
-                  > things</a
-                >
-                for fun. Say hi at
-                <a
-                  class="aboutDrawer__emailLink"
-                  href="mailto:joey.steigelman@gmail.com?subject=Hello"
-                  >joey.steigelman@gmail.com</a
-                >
-              </p>
-        </div>
+      <div class="aboutDrawer__text">
+        <p>
+          Joey Steigelman is a developer based in New York City. In her spare
+          time she can be found making
+          <a
+            href="https://github.com/jsteigelman"
+            target="_blank"
+            class="aboutDrawer__githubLink"
+          >
+            things</a
+          >
+          for fun. Say hi at
+          <a
+            class="aboutDrawer__emailLink"
+            href="mailto:joey.steigelman@gmail.com?subject=Hello"
+            >joey.steigelman@gmail.com</a
+          >
+        </p>
+      </div>
     </div>
     <div class="shape"></div>
     <script src="js/three.js"></script>
