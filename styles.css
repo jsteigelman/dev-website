@@ -206,4 +206,8 @@ li a:hover {
     font-size: 1.75rem;
     color: black;
   }
+
+  li a:hover {
+    color: white;
+  }
 }
