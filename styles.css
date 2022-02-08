@@ -141,6 +141,7 @@ li a:hover {
   }
 
   .aboutDrawer__text p {
+    display: inline-block;
     overflow-wrap: break-word;
     font-size: 4rem;
   }
