@@ -131,9 +131,9 @@ li a:hover {
 @media screen and (max-width: 600px) {
 
   .header-text h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: left;
-    color: var(--accent-color)
+    color: white
   }
 
   .aboutDrawer {
