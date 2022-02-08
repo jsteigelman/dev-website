@@ -131,7 +131,7 @@ li a:hover {
 @media screen and (max-width: 600px) {
 
   .header-text h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: left;
     color: white
   }
@@ -152,6 +152,6 @@ li a:hover {
 
   li a {
       padding-bottom: 16px;
-      font-size: 2rem;
+      font-size: 1.75rem;
   }
 }
