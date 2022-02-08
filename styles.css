@@ -150,6 +150,12 @@ li a:hover {
     overflow: scroll;
   }
 
+  .aboutDrawer__text {
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+
   .aboutDrawer__text p {
     display: inline-block;
     overflow-wrap: break-word;
