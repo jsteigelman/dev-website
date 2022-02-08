@@ -35,7 +35,7 @@ body {
     padding: 0;
     overflow: hidden;
   
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     
   }
@@ -52,5 +52,11 @@ body {
     color: white;
     text-align: center;
     text-decoration: none;
+    font-weight: 600;
+  }
+  
+    
+  li a:hover {
+    color: magenta;
   }
   
