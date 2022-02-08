@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-color: #4324fb;
+  }
+  
+  .shape {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .header-text {
+    padding: 20px;
+    width: calc(100vw - 40px);
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  
+  .header-text h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+    font-size: 20px;
+    font-weight: 500;
+    
+  }
+  
+  li {
+    float: left;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
