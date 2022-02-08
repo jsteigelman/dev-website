@@ -9,6 +9,7 @@
   --bold-weight: 600;
   /* --accent-color: #70FB6D; */
   --accent-color: magenta;
+  /* --accent-color: #7232fb; */
 }
 
 body {
@@ -118,7 +119,6 @@ li a:hover {
   padding: 50px 60px;
   margin: 0;
   font-weight: var(--bold-weight);
-  /* text-transform: uppercase; */
   width: calc(100vw - 80px);
   margin: 0 auto;
 }
@@ -143,7 +143,7 @@ li a:hover {
   .header-text h1 {
     font-size: 2rem;
     text-align: left;
-    color: white
+    color: white;
   }
 
   .aboutDrawer {
@@ -162,9 +162,23 @@ li a:hover {
     align-items: flex-end;
 }
 
+.bgLayer {
+    display: none;
+    background-color: transparent;
+    z-index: -1;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
   img.hamburger-icon {
     display: block;
     margin-bottom: 16px;
+    float: right;
 }
 
   ul {
