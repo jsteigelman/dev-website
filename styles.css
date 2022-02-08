@@ -129,14 +129,11 @@ li a:hover {
 /* mobile */
 
 @media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
 
   .header-text h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: left;
+    color: var(--accent-color)
   }
 
   .aboutDrawer {
@@ -154,5 +151,6 @@ li a:hover {
 
   li a {
       padding-bottom: 16px;
+      font-size: 2rem;
   }
 }
