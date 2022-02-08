@@ -10,3 +10,10 @@ const toggleNav = () => {
     backgroundLayer.style.display = 'none'
   }
 }
+
+const closeMobileNav = () => {
+    const backgroundLayer = document.querySelector('.bgLayer')
+    if (backgroundLayer.style.display === 'block') {
+        document.querySelector('ul').style.display = 'none'
+    }
+}
