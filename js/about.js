@@ -1,9 +1,8 @@
 const openAboutDrawer = () => {
-  console.log('the drawer has been opened!')
   document.querySelector('.aboutDrawer').style.display = 'block'
+  document.querySelector('.hamburger-icon').src = './../img/hamburger_open.png'
 }
 
 const closeAboutDrawer = () => {
-  console.log('the drawer has been closed!')
   document.querySelector('.aboutDrawer').style.display = 'none'
 }

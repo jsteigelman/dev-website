@@ -10,6 +10,7 @@
   /* --accent-color: #70FB6D; */
   --accent-color: magenta;
   /* --accent-color: #7232fb; */
+  --mobile-nav: 2rem;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
 }
 
 img.hamburger-icon {
-  height: 2rem;
+  height: 1.75rem;
   width: auto;
   display: none;
 }
@@ -141,7 +142,7 @@ li a:hover {
 
 @media screen and (max-width: 600px) {
   .header-text h1 {
-    font-size: 2rem;
+    font-size: var(--mobile-nav);
     text-align: left;
     color: white;
   }
@@ -167,6 +168,7 @@ li a:hover {
   .topnav {
     flex-direction: column;
     align-items: flex-end;
+    height: var(--mobile-nav);
   }
 
   .bgLayer {
@@ -184,8 +186,9 @@ li a:hover {
 
   img.hamburger-icon {
     display: block;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     float: right;
+    height: 100%;
   }
 
   ul {
