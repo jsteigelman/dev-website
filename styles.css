@@ -3,12 +3,14 @@
   --nav-color: white;
   --font-family: nhg-s65, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
     Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  --white: white;
+  --white: #fff;
+  --black: #000;
   font-size: 16px;
   --normal-weight: var(--normal-weight);
   --bold-weight: 600;
   /* --accent-color: #70FB6D; */
-  --accent-color: magenta;
+  /* --accent-color: magenta; */
+  --accent-color: #E1FD7E;
   /* --accent-color: #7232fb; */
   --mobile-nav: 2rem;
 }
@@ -16,6 +18,10 @@
 body {
   margin: 0;
   background-color: var(--background);
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 .shape {
@@ -110,22 +116,32 @@ li a:hover {
   margin: 0;
   padding: 0;
 
-  width: 90%;
+  /* width: 90%; */
   position: fixed;
-  left: 50%;
-  margin-left: -45%;
+  /* left: 50%;
+  margin-left: -45%; */
+
+  width: 100%;
+  margin: 0 auto;
+
 }
 
 .aboutDrawer__text p {
   font-size: 2.5rem;
-  line-height: 3.75 rem;
-  color: var(--white);
+  /* line-height: 3.75 rem; */
+  line-height: 110%;
+  /* color: var(--white); */
+  color: var(--black);
   font-family: var(--font-family);
-  padding: 50px 60px;
+  /* padding: 50px 60px; */
   margin: 0;
   font-weight: var(--bold-weight);
-  width: calc(90vw - 120px);
-  margin: 0 auto;
+  /* width: calc(90vw - 120px);
+  margin: 0 auto; */
+
+  padding: 40px;
+  /* width: 100%; */
+
 }
 
 .aboutDrawer__githubLink {
@@ -134,8 +150,11 @@ li a:hover {
 }
 
 .aboutDrawer__emailLink {
-  color: white;
+  color: var(--black);
   text-decoration: none;
+
+  display: inline-block;
+  word-break: break-word;
 }
 
 /* mobile */
@@ -161,8 +180,12 @@ li a:hover {
     display: inline-block;
     overflow-wrap: break-word;
     font-size: 2rem;
-    padding: 25px 30px;
-    width: calc(100% - 60px);
+    padding: 20px;
+
+    /* padding: 25px 30px;
+    width: calc(100% - 60px); */
+
+
   }
 
   .topnav {
